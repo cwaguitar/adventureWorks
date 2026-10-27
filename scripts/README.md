@@ -30,7 +30,7 @@ Para garantizar consultas rápidas y escalabilidad ante volúmenes masivos de ve
 ## 📊 Demostración Interactiva & Impacto
 El dashboard permite al equipo gerencial filtrar interactivamente el rendimiento por territorio, evaluar la concentración de ingresos y ajustar las estrategias de inventario según la demanda regional.
 
-![Demo Dashboard](./dashboard/adventure.gif)
+![Demo Dashboard](https://github.com/cwaguitar/adventureWorks/blob/main/dashboard/adventure.gif)
 
 ---
 
