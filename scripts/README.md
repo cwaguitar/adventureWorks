@@ -23,7 +23,7 @@ Para garantizar consultas rápidas y escalabilidad ante volúmenes masivos de ve
 - **`dim_product`**: Dimensión de catálogo que permite segmentar el rendimiento por artículo.
 - **`dim_region`**: Dimensión geográfica para análisis de penetración de mercado.
 
-![Modelo en Estrella](./dashboard/vista_modelo.jpeg)
+![Modelo en Estrella](https://github.com/cwaguitar/adventureWorks/blob/main/dashboard/vista_modelo.jpeg)
 
 ---
 
