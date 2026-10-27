@@ -23,14 +23,14 @@ Para garantizar consultas rápidas y escalabilidad ante volúmenes masivos de ve
 - **`dim_product`**: Dimensión de catálogo que permite segmentar el rendimiento por artículo.
 - **`dim_region`**: Dimensión geográfica para análisis de penetración de mercado.
 
-![Modelo en Estrella](./images/star_schema_model.png)
+![Modelo en Estrella](./dashboard/vista_modelo.jpeg)
 
 ---
 
 ## 📊 Demostración Interactiva & Impacto
 El dashboard permite al equipo gerencial filtrar interactivamente el rendimiento por territorio, evaluar la concentración de ingresos y ajustar las estrategias de inventario según la demanda regional.
 
-![Demo Dashboard](./images/demo.gif)
+![Demo Dashboard](./dashboard/adventure.gif)
 
 ---
 
