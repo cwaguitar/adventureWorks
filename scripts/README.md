@@ -1,31 +1,41 @@
-# 📊 Sales Analytics & Star Schema Portfolio Project
+# 🚴‍♂️ AdventureWorks: Optimización de Ventas y Modelado Dimensional 
 
-## 📌 Descripción del Proyecto
-Este proyecto demuestra el diseño e implementación de un pipeline de datos de ventas de extremo a extremo, estructurado mediante un **Modelo en Estrella (Star Schema)** e integrado en **Power BI** para la toma de decisiones estratégicas.
+## 💼 Contexto del Negocio & Problema
 
----
+**AdventureWorks** es un fabricante y distribuidor global de equipos de ciclismo y accesorios. La dirección comercial enfrentaba dificultades para tomar decisiones estratégicas debido a la falta de visibilidad unificada sobre el rendimiento de las ventas por región y la rotación de catálogo.
 
-## 🏗️ Arquitectura del Modelo de Datos
-El proyecto utiliza una arquitectura dimensional limpia cargada mediante scripts en Python para mantener la integridad relacional:
+### Retos Clave:
 
-- **`fact_sales`**: Tabla de hechos con métricas de ventas (`Sales`) y volumen (`Quantity`).
-- **`dim_product`**: Dimensión de productos conectada mediante `ProductKey`.
-- **`dim_region`**: Dimensión geográfica/territorial conectada mediante `SalesTerritoryKey`.
-
-![Modelo en Estrella](./dashboard/vista_modelo.jpeg) *(Reemplaza con la ruta de la captura de tu vista modelo)*
+- **Falta de consolidación:** Los datos de transacciones, regiones y productos se encontraban aislados, dificultando el análisis cruzado.
+- **Toma de decisiones lenta:** El equipo comercial no podía identificar con rapidez los productos estrella frente a los de baja rotación en cada territorio.
 
 ---
 
-## 📈 Dashboard en Power BI
-El informe final combina métricas de rendimiento y distribución de datos:
-- **Distribución Regional:** Análisis visual de cuota de mercado por zona.
-- **Rendimiento de Productos:** Análisis comparativo de ventas e ingresos por ítem.
+## 🎯 Solución Implementada
 
-![Power BI Dashboard](./dashboard/adventure.gif) *(Reemplaza con la ruta de la captura de tu reporte)*
+Se diseñó un pipeline de inteligencia de negocios de extremo a extremo que transforma los registros transaccionales en un **modelo de datos relacional altamente optimizado** y un **dashboard interactivo** en Power BI para el nivel directivo.
+
+### 1. Arquitectura de Datos (Modelo en Estrella)
+
+Para garantizar consultas rápidas y escalabilidad ante volúmenes masivos de ventas, se estructuró un **Star Schema**:
+
+- **`fact_sales`**: Registra los eventos transaccionales, ingresos ($) y volumen de unidades (`Quantity`).
+- **`dim_product`**: Dimensión de catálogo que permite segmentar el rendimiento por artículo.
+- **`dim_region`**: Dimensión geográfica para análisis de penetración de mercado.
+
+![Modelo en Estrella](./images/star_schema_model.png)
 
 ---
 
-## 🛠️ Tecnologías Utilizadas
-- **Python / SQLite:** Ingesta y modelado dimensional.
-- **Power BI Desktop:** Modelado relacional (DAX básicos) y visualización de datos.
-- **Git / GitHub:** Control de versiones y documentación.
+## 📊 Demostración Interactiva & Impacto
+El dashboard permite al equipo gerencial filtrar interactivamente el rendimiento por territorio, evaluar la concentración de ingresos y ajustar las estrategias de inventario según la demanda regional.
+
+![Demo Dashboard](./images/demo.gif)
+
+---
+
+## 🛠️ Stack Tecnológico & Competencias Demostradas
+- **Python / SQL:** Limpieza, procesamiento e ingesta de datos transaccionales.
+- **Modelado Dimensional:** Diseño de arquitectura Star Schema (Fact & Dimensions).
+- **Power BI Desktop:** Modelado de relaciones, filtrado cruzado y visualización de KPIs.
+- **Documentación Técnica:** Control de versiones e integración en GitHub.
